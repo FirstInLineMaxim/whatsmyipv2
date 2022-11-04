@@ -1,7 +1,6 @@
 import React,{useEffect,useState} from 'react';
 import './App.css';
 import LeafletMap from './LeafletMap';
-import { MyMapComponent } from './LeafletMap';
 // import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
