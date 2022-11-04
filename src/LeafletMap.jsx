@@ -14,12 +14,12 @@ export default function LeafletMap({data}) {
         map.flyTo(e.latlng, map.getZoom())
       },
     })
-  
     return position === null ? null : (
       <Marker position={position}>
         <Popup>You are here</Popup>
       </Marker>
     )
+ 
   }
   return (
       <MapContainer center={[data.lat,data.lng]} zoom={13} scrollWheelZoom={false}>

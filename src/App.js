@@ -43,11 +43,13 @@ function App() {
         </Typography>
         <Typography variant="body2" color="text.secondary">
         {country && <>
-        <p>Today is the {DateTime.now().setLocale(country[0].cca2).toLocaleString(DateTime.DATE_MED)}</p>
-        <p>{country[0].region}</p>
+        Today is the {DateTime.now().setLocale(country[0].cca2).toLocaleString(DateTime.DATE_MED)}
+        
         </>
         }
         </Typography>
+        <p>{country[0].region}</p>
+        <p>Click the Map to see your GPS location</p>
       </CardContent>
       <CardActions>
         <Button size="small">Share</Button>
