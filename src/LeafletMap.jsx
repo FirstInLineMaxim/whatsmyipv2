@@ -1,8 +1,26 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { MapContainer, TileLayer,Marker,Popup } from 'react-leaflet'
+import { useMapEvents } from 'react-leaflet/hooks'
 
 export default function LeafletMap({data}) {
-  console.log(data.lat)
+  function LocationMarker() {
+    const [position, setPosition] = useState(null)
+    const map = useMapEvents({
+      click() {
+        map.locate()
+      },
+      locationfound(e) {
+        setPosition(e.latlng)
+        map.flyTo(e.latlng, map.getZoom())
+      },
+    })
+  
+    return position === null ? null : (
+      <Marker position={position}>
+        <Popup>You are here</Popup>
+      </Marker>
+    )
+  }
   return (
       <MapContainer center={[data.lat,data.lng]} zoom={13} scrollWheelZoom={false}>
         <TileLayer
@@ -14,7 +32,11 @@ export default function LeafletMap({data}) {
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>
         </Marker>
+        <LocationMarker />
     </MapContainer>
 
   )
 }
+
+
+
