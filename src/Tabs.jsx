@@ -19,6 +19,7 @@ return (
     <p>Capital : {data.capital[0]}</p>
     <ul>TimeZones{data.timezones.map((ele,i)=><li key={i}>{ele}</li>)}</ul>
     <ul>Currencies{curNames.map((ele,i)=> <li>{ele} : {curValues.map((ele2) => (ele2[i]))}</li>)}</ul>
+    <img src={data.coatOfArms.png} alt="CoatOfArms"/>
 
   </TabPanel>
   <TabPanel>
