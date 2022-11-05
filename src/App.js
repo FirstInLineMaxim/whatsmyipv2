@@ -1,7 +1,7 @@
 import React,{useEffect,useState} from 'react';
 import './App.css';
 import LeafletMap from './LeafletMap';
-import Tabs from './Tabs';
+import TabsComp from './Tabs';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -60,7 +60,7 @@ function App() {
 
     {country && <LeafletMap data={IP}/>}
     </div>
-    {country && <Tabs data={country[0]}/>}
+    {country && <TabsComp data={country[0]}/>}
     </>
   );
 }
