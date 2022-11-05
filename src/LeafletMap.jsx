@@ -22,12 +22,12 @@ export default function LeafletMap({data}) {
  
   }
   return (
-      <MapContainer center={[data.lat,data.lng]} zoom={13} scrollWheelZoom={false}>
+      <MapContainer center={[data.lat,data.lon]} zoom={13} scrollWheelZoom={false}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={[data.lat, data.lng]}>
+        <Marker position={[data.lat, data.lon]}>
           <Popup>
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>

@@ -1,7 +1,7 @@
 import React,{useEffect,useState} from 'react';
 import './App.css';
 import LeafletMap from './LeafletMap';
-// import Button from '@mui/material/Button';
+import Tabs from './Tabs';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -12,13 +12,13 @@ import Typography from '@mui/material/Typography';
 function App() {
   const [IP, setIP] = useState()
   useEffect(() => {
-      fetch(process.env.REACT_APP_API_URL).then(response => response.json()).then(data => setIP(data))
+      fetch("http://ip-api.com/json/").then(response => response.json()).then(data => setIP(data))
     }, [])
     
     const [country, setCountry] = useState()
     useEffect(()=>{
         if(IP){
-            fetch(`https://restcountries.com/v3.1/alpha?codes=${IP.location.country}`).then(response => response.json()).then(data => setCountry(data))
+            fetch(`https://restcountries.com/v3.1/alpha?codes=${IP.countryCode}`).then(response => response.json()).then(data => setCountry(data))
           }
         
         },[IP])
@@ -58,8 +58,9 @@ function App() {
     
     {/*IP.location  */}
 
-    {country && <LeafletMap data={IP.location}/>}
+    {country && <LeafletMap data={IP}/>}
     </div>
+    {country && <Tabs data={country[0]}/>}
     </>
   );
 }
