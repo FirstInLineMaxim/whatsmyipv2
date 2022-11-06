@@ -23,6 +23,7 @@ export default function Basic() {
       <h3><a href='https://mui.com/'>Material UI</a></h3>
       <p>Some Styling with the MUI component library</p>
       <h3><a href='https://github.com/nukeop/react-ui-cards'>React UI Cards</a></h3>
+      <p>Just my Github Profile Card</p>
       <h3>The API's</h3>
       <p><a href='http://ip-api.com/'>http://ip-api.com/</a> for recieving the Ip of the Client and getting general data like Latitude and Longitude</p>
       <p><a href='https://restcountries.com/v3.1/'>https://restcountries.com/v3.1/</a> for the Country Facts</p>
