@@ -6,7 +6,6 @@ export default function TabsComp ({data}){
 const short = Object.keys(data.currencies)[0]
 const curNames = Object.keys(data.currencies[short])
 const curValues = Object.values(data.currencies[short])
-
 return (    
 <Tabs>
   <TabList>
@@ -17,7 +16,7 @@ return (
   <TabPanel>
     <p>Capital : {data.capital[0]}</p>
     <ul>TimeZones{data.timezones.map((ele,i)=><li key={i}>{ele}</li>)}</ul>
-    <ul>Currencies{curNames.map((ele,i)=> <li key={i}>{ele} : {curValues.map((ele2) => (ele2[i]))}</li>)}</ul>
+    <ul>Currencies{curNames.map((ele,i)=> <li key={i}>{ele} : {curValues[i]}</li>)}</ul>
     <h3>Coat of Arms</h3>
     <img className='CoatOfArms' src={data.coatOfArms.png} alt="CoatOfArms"/>
 

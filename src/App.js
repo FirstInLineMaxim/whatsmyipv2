@@ -1,7 +1,7 @@
 import './App.css';
 import React,{useEffect,useState} from 'react';
 import { NavLink,Routes,Route } from 'react-router-dom';
-import Basic from './components/Basic';
+import Basic from './components/MyTech';
 import Cards from './components/Card';
 
 
