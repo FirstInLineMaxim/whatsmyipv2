@@ -1,5 +1,6 @@
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import { browserName, browserVersion } from "react-device-detect";
 
 
 export default function TabsComp ({data}){
@@ -10,7 +11,7 @@ return (
 <Tabs>
   <TabList>
     <Tab>Country Facts</Tab>
-    <Tab>Title 2</Tab>
+    <Tab>UserAgent</Tab>
   </TabList>
 
   <TabPanel>
@@ -22,7 +23,10 @@ return (
 
   </TabPanel>
   <TabPanel>
-    <h2>Any content 2</h2>
+    <h2>{browserName} : Version {browserVersion}</h2>
+    <p>{navigator.userAgent}</p>
+    <p>{navigator.cookieEnabled ? "Cookies Enabled" : "no"}</p>
+
   </TabPanel>
 </Tabs>
 )

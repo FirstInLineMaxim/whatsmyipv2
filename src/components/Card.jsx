@@ -2,11 +2,10 @@ import React,{useEffect,useState} from 'react';
 import LeafletMap from './LeafletMap';
 import TabsComp from './Tabs';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+
 
 export default function Cards() {
 
@@ -28,7 +27,7 @@ export default function Cards() {
   return (
     <>
 <div className='map_card'>
- { country &&  <Card sx={{ maxWidth: 345 }}>
+ { country &&  <Card sx={{ maxWidth: 345, maxHeight: 465 }}>
       <CardMedia
         component="img"
         alt="flag"
@@ -46,16 +45,13 @@ export default function Cards() {
         </>
         }
         </Typography>
-        <p>{country[0].region}</p>
-        <p>Click the Map to see your GPS location</p>
+        <Typography variant="body1" color="text.primery">ISP: {IP.isp}</Typography>
+        <Typography variant="body1" color="text.primery">Country: {IP.country}</Typography>
+        <Typography variant="body1" color="text.primery">State/Region: {IP.regionName}</Typography>
+        <Typography variant="body1" color="text.primery">Click the Map to see your GPS location</Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
     </Card>}
     
-    {/*IP.location  */}
 
     {country && <LeafletMap data={IP}/>}
     </div>

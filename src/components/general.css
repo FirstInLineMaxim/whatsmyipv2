@@ -3,6 +3,8 @@
     object-fit: contain;
 }
 .theTech{
+    overflow: scroll;
+    height: 93.5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,4 +12,12 @@
 }
 a{
     text-decoration: none;
+}
+.bottomNav{
+    display: flex;
+    justify-content: center;
+}
+
+.src-UserCard-UserCardAvatar-styles-module__user-card-avatar--NTkwv{
+    background-size: contain!important
 }

@@ -16,7 +16,7 @@ export default function LeafletMap({data}) {
     })
     return position === null ? null : (
       <Marker position={position}>
-        <Popup>You are here</Popup>
+        <Popup>GPS location</Popup>
       </Marker>
     )
  
@@ -29,7 +29,7 @@ export default function LeafletMap({data}) {
         />
         <Marker position={[data.lat, data.lon]}>
           <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
+            Your Service provide Entry point
           </Popup>
         </Marker>
         <LocationMarker />
