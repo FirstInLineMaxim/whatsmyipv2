@@ -1,29 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from '@mui/material';
-import Avatar from '@mui/material/Avatar';
-import Stack from '@mui/material/Stack';
-import mui_logo from '../img/MUI.png'
-import react_logo from '../img/React.png'
-import router_logo from '../img/reactrouter.png'
-import leaflet_logo from '../img/React_Leaflet.png'
+// import mui_logo from '../img/MUI.png'
+// import react_logo from '../img/React.png'
+// import router_logo from '../img/reactrouter.png'
+// import leaflet_logo from '../img/React_Leaflet.png'
 import './general.css'
 
 
 export default function Basic() {
   return (
     <>
- {/* <Stack direction="row" spacing={2}>
-      <Avatar alt="React" src={react_logo} variant="rounded" />
-      <p>React</p>
-      <Avatar alt="React Router Dom" src={router_logo} variant="rounded" />
-      <p>React Router Dom</p>
-      <Avatar alt="React leaflet" src={leaflet_logo} variant="rounded"  />
-      <p>React leaflet</p>
-      <Avatar alt="MUI" src={mui_logo} variant="rounded" />
-      <p>MUI</p>
-
-    </Stack> */}
 
     <div className='theTech'>
       <h2>The Tech used in this Project</h2>
