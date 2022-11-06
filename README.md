@@ -8,10 +8,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## TheTech
 
-![TheTech](/src/ProjectImages/screencapture-localhost-3000-Dev-2022-11-06-18_37_58.png)
+![TheTech](/src/ProjectImages/screencapture-localhost-3000-Tech-2022-11-06-18_37_46.png)
 ## TheDev
-![TheDev](/src/ProjectImages/screencapture-localhost-3000-Tech-2022-11-06-18_37_46.png)
 
+![TheDev](/src/ProjectImages/screencapture-localhost-3000-Dev-2022-11-06-18_37_58.png)
 ## Available Scripts
 
 In the project directory, you can run:
