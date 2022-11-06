@@ -19,7 +19,8 @@ return (
     <ul>TimeZones{data.timezones.map((ele,i)=><li key={i}>{ele}</li>)}</ul>
     <ul>Currencies{curNames.map((ele,i)=> <li key={i}>{ele} : {curValues[i]}</li>)}</ul>
     <h3>Coat of Arms</h3>
-    <img className='CoatOfArms' src={data.coatOfArms.png} alt="CoatOfArms"/>
+    <img className='CoatOfArms' src={data.coatOfArms.svg} alt="CoatOfArms"/>
+    {console.log(data.coatOfArms.svg)}
 
   </TabPanel>
   <TabPanel>
