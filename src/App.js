@@ -1,5 +1,5 @@
 import './App.css';
-import React,{useEffect,useState} from 'react';
+import React from 'react';
 import { NavLink,Routes,Route } from 'react-router-dom';
 import Basic from './components/MyTech';
 import Cards from './components/Card';
@@ -10,8 +10,7 @@ import Cards from './components/Card';
 function App() {
   return (
     <>
-    <NavLink to="/Tech">Technology</NavLink>
-    <NavLink to="/Map">Mao</NavLink>
+    <NavLink to="/Tech">TheTech</NavLink>
 
     <Routes>
       <Route index element={<Cards/>}/>

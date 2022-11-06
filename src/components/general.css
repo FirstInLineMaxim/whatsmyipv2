@@ -1,0 +1,13 @@
+.MuiAvatar-img{
+    background-color: black;
+    object-fit: contain;
+}
+.theTech{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem;
+}
+a{
+    text-decoration: none;
+}
