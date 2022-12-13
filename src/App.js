@@ -15,7 +15,7 @@ function App() {
     {/* <NavLink to="/Tech">TheTech</NavLink> */}
     <div className='mainContainer'>
     <Routes>
-      <Route index element={<Cards/>}/>
+      <Route path='whatsmyipv2' element={<Cards/>}/>
       <Route path='Tech' element={<Basic/>}/>
       <Route path='Dev' element={<TheDev/>}/>
 
