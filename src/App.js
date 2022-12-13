@@ -16,8 +16,8 @@ function App() {
     <div className='mainContainer'>
     <Routes>
       <Route path='whatsmyipv2' element={<Cards/>}/>
-      <Route path='Tech' element={<Basic/>}/>
-      <Route path='Dev' element={<TheDev/>}/>
+      <Route path='whatsmyipv2/Tech' element={<Basic/>}/>
+      <Route path='whatsmyipv2/Dev' element={<TheDev/>}/>
 
     </Routes>
     <LabelBottomNavigation/>

@@ -20,21 +20,21 @@ export default function LabelBottomNavigation() {
         <BottomNavigationAction
         label="MainPage"
         value=""
-        to="/"
+        to="/whatsmyipv2"
         LinkComponent={NavLink}
         icon={<LocationOnIcon />}
       />
       <BottomNavigationAction
         label="TheTech"
         value="Tech"
-        to="/Tech"
+        to="/whatsmyipv2/Tech"
         LinkComponent={NavLink}
         icon={<InfoOutlined />}
       />
       <BottomNavigationAction
         label="The Dev"
         value="TheDev"
-        to="/Dev"
+        to="/whatsmyipv2/Dev"
         LinkComponent={NavLink}
         icon={<AccountCircleOutlined />}
       />

@@ -7,7 +7,8 @@ export default function TabsComp ({data}){
 const short = Object.keys(data.currencies)[0]
 const curNames = Object.keys(data.currencies[short])
 const curValues = Object.values(data.currencies[short])
-return (    
+return (
+  <div className="tabs_center">   
 <Tabs>
   <TabList>
     <Tab>Country Facts</Tab>
@@ -30,5 +31,6 @@ return (
 
   </TabPanel>
 </Tabs>
+</div> 
 )
 }
