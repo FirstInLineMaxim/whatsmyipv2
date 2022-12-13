@@ -1,0 +1,13 @@
+
+.leaflet-container{
+    width: 85vw;
+    height: 50vh;
+}
+
+.map_card{
+display: flex;
+}
+
+.CoatOfArms{
+    height: 8rem;
+}
