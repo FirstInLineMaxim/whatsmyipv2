@@ -1,8 +1,9 @@
-.MuiAvatar-img{
+.MuiAvatar-img {
     background-color: black;
     object-fit: contain;
 }
-.theTech{
+
+.theTech {
     overflow: auto;
     height: 93.5vh;
     display: flex;
@@ -10,37 +11,41 @@
     align-items: center;
     gap: 0.1rem;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.bottomNav{
-    position: fixed;
-    left: 50%;
-    bottom: 10px;
-    transform: translate(-50%, -50%);
+
+.bottomNav {
+    position: absolute;
+    bottom: 0;
     margin: 0 auto;
 }
 
-.src-UserCard-UserCardAvatar-styles-module__user-card-avatar--NTkwv{
-    background-size: contain!important
+.src-UserCard-UserCardAvatar-styles-module__user-card-avatar--NTkwv {
+    background-size: contain !important
 }
-.TheDev{
+
+.TheDev {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 93.5vh;
 }
-.react-tabs__tab-list{
+
+.react-tabs__tab-list {
     display: flex;
     justify-content: center;
 }
-.react-tabs__tab-panel--selected{
+
+.react-tabs__tab-panel--selected {
     display: flex !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.MuiPaper-root{
+
+.MuiPaper-root {
     width: 50vw;
     height: 40vh;
 }

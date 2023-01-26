@@ -12,18 +12,18 @@ export default function Cards() {
   const [IP, setIP] = useState()
   useEffect(() => {
     fetch("https://ipapi.co/json/")
-    .then(response => response.json())
-    .then(data => setIP(data))
-    .catch(err => console.error(err))
+      .then(response => response.json())
+      .then(data => setIP(data))
+      .catch(err => console.error(err))
   }, [])
 
   const [country, setCountry] = useState()
   useEffect(() => {
     if (IP) {
       fetch(`https://restcountries.com/v3.1/alpha?codes=${IP.country_code}`)
-      .then(response => response.json())
-      .then(data => setCountry(data))
-      .catch(err => console.error(err))
+        .then(response => response.json())
+        .then(data => setCountry(data))
+        .catch(err => console.error(err))
     }
 
   }, [IP])
@@ -34,7 +34,7 @@ export default function Cards() {
   return (
     <>
       <div className='map_card'>
-        {country && <Card sx={{ maxWidth: 345, maxHeight: 465 }}>
+        {country && <Card sx={{ maxWidth: 350, height: 464 }}>
           <CardMedia
             component="img"
             alt="flag"
